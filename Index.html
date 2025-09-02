@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portofolio Raihan - CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Poppins',sans-serif;background:#1e1f23;color:#fff;scroll-behavior:smooth;}
+
+    /* Navbar */
+    header{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:20px 60px;background:rgba(21,22,24,0.7);
+      backdrop-filter:blur(10px);position:sticky;top:0;z-index:1000;
+      transition:.3s ease;
+    }
+    header.scrolled{background:#151618;box-shadow:0 4px 15px rgba(0,0,0,.4);}
+    header .logo{font-size:20px;font-weight:600;color:#fff;}
+    nav a{margin-left:25px;text-decoration:none;color:#ddd;font-weight:400;transition:.3s;}
+    nav a:hover{color:#00c1b6;}
+    nav a.active{color:#00c1b6;font-weight:600;border-bottom:2px solid #00c1b6;padding-bottom:4px;}
+
+    /* Hero */
+    .hero{
+      display:flex;justify-content:space-between;align-items:center;
+      padding:120px 60px;flex-wrap:wrap;gap:40px;min-height:100vh;
+      background:radial-gradient(circle at top left,#00c1b6,transparent 60%),
+                 radial-gradient(circle at bottom right,#ff6f61,transparent 60%);
+    }
+    .hero-text{max-width:500px;}
+    .hero-text h1{
+      font-size:55px;font-weight:700;margin-bottom:10px;
+      background:linear-gradient(90deg,#00c1b6,#ff6f61);
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+    }
+    .hero-text h2{font-size:22px;font-weight:500;color:#ddd;margin-bottom:20px;}
+    .hero-text p{font-size:16px;color:#aaa;margin-bottom:30px;}
+    .btn-primary{
+      padding:14px 28px;border-radius:30px;text-decoration:none;font-weight:600;color:#fff;
+      background:linear-gradient(45deg,#00c1b6,#ff6f61);
+      box-shadow:0 5px 20px rgba(0,0,0,.5);transition:.4s;
+    }
+    .btn-primary:hover{transform:translateY(-4px) scale(1.05);box-shadow:0 8px 25px rgba(0,0,0,.6);}
+
+    /* Section umum */
+    section{padding:80px 60px;}
+    section h2{text-align:center;font-size:32px;margin-bottom:20px;color:#00c1b6;}
+    section p{text-align:center;max-width:700px;margin:0 auto 40px auto;color:#aaa;}
+
+    /* CV Section */
+    .cv-container{
+      max-width:900px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:40px;
+    }
+    .cv-box{
+      background:#2a2b30;padding:20px;border-radius:12px;
+      box-shadow:0 5px 15px rgba(0,0,0,.5);
+    }
+    .cv-box h3{color:#ff6f61;margin-bottom:15px;}
+    .cv-box ul{list-style:none;}
+    .cv-box ul li{margin-bottom:10px;color:#ccc;}
+    .cv-box ul li strong{color:#00c1b6;}
+
+    /* Contact form (bonus rapi) */
+    .contact-form{max-width:600px;margin:auto;display:flex;flex-direction:column;gap:15px;}
+    .contact-form input,.contact-form textarea{
+      padding:12px;border-radius:8px;border:none;outline:none;background:#2a2b30;color:#fff;
+    }
+    .contact-form button{
+      background:#00c1b6;color:#fff;padding:12px;border:none;border-radius:30px;
+      font-weight:700;cursor:pointer;transition:.3s;
+    }
+    .contact-form button:hover{background:#00a69c;}
+
+    footer{text-align:center;padding:30px;background:#151618;color:#777;margin-top:40px;}
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Raihanths</div>
+    <nav>
+      <a href="#cv" class="active">CV</a>
+      <a href="#about">Tentang Saya</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Halo, Saya Raihan</h1>
+      <h2>Desainer UX & Multimedia</h2>
+      <p>Saya fokus menciptakan pengalaman digital yang intuitif dan bermakna.
+         Klik tombol di bawah untuk melihat CV saya.</p>
+      <a href="Hitam dan Emas Modern Profesional Lulusan Baru CV Resume Riwayat Hidup_20250827_143358_0000.pdf" class="btn-primary">LIHAT CV SAYA</a>
+    </div>
+  </section>
+
+  <!-- CV -->
+  <section id="cv">
+    <h2>Curriculum Vitae</h2>
+    <p>Ringkasan pengalaman, pendidikan, dan keterampilan saya.</p>
+
+    <div class="cv-container">
+      <div class="cv-box">
+        <h3>Pengalaman Kerja</h3>
+        <ul>
+          <li><strong>2021 - Sekarang:</strong> Freelance Desainer UX - Klien internasional</li>
+          <li><strong>2018 - 2021:</strong> UX/UI Designer di Digital Studio, Barcelona</li>
+          <li><strong>2015 - 2018:</strong> Junior Designer di Creative Agency, Madrid</li>
+        </ul>
+      </div>
+      <div class="cv-box">
+        <h3>Pendidikan</h3>
+        <ul>
+          <li><strong>2011 - 2015:</strong> S1 Desain Multimedia, Universitas Madrid</li>
+          <li><strong>2008 - 2011:</strong> Sekolah Menengah Seni & Desain</li>
+        </ul>
+      </div>
+      <div class="cv-box">
+        <h3>Keterampilan</h3>
+        <ul>
+          <li>UI/UX Design (Figma, Adobe XD)</li>
+          <li>Graphic Design (Photoshop, Illustrator)</li>
+          <li>Frontend (HTML, CSS, JavaScript)</li>
+          <li>Motion Graphic & Multimedia</li>
+        </ul>
+      </div>
+      <div class="cv-box">
+        <h3>Informasi Kontak</h3>
+        <ul>
+          <li><strong>Email:</strong> raihan@example.com</li>
+          <li><strong>Telepon:</strong> +62 895-0928-0771</li>
+          <li><strong>Alamat:</strong> Terragona, Spanyol</li>
+          <li><strong>LinkedIn:</strong> linkedin.com/in/raihan</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>Tentang Saya</h2>
+    <p>Saya seorang desainer UX & Multimedia dengan pengalaman lebih dari 5 tahun.
+       Passion saya adalah menciptakan desain yang sederhana namun efektif,
+       membantu orang menikmati pengalaman digital dengan nyaman.</p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Kontak</h2>
+    <p>Silakan hubungi saya jika ingin berkolaborasi.</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email Anda" required>
+      <textarea rows="5" placeholder="Pesan Anda"></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Raihan Ths | CV & Portofolio
+  </footer>
+
+  <script>
+    // Navbar efek scroll (ubah gaya background)
+    window.addEventListener("scroll", () => {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) header.classList.add("scrolled");
+      else header.classList.remove("scrolled");
+    });
+
+    // Active link berdasarkan posisi scroll
+    const navLinks = document.querySelectorAll("nav a");
+    const sections = document.querySelectorAll("section[id]"); // hanya section yang punya id
+
+    function setActiveLinkOnScroll() {
+      let current = "";
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 120;
+        if (window.pageYOffset >= sectionTop) {
+          current = section.getAttribute("id");
+        }
+      });
+      navLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === "#" + current) {
+          link.classList.add("active");
+        }
+      });
+    }
+
+    window.addEventListener("scroll", setActiveLinkOnScroll);
+    window.addEventListener("load", setActiveLinkOnScroll); // set status saat pertama kali load
+  </script>
+
+</body>
+</html>
